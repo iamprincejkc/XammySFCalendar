@@ -27,6 +27,7 @@ namespace XammySFCalendar.ViewModels
             PageLoad();
 
         }
+<<<<<<< HEAD
 
         Color ConvertColor(string color="Transparent")
         {
@@ -39,6 +40,9 @@ namespace XammySFCalendar.ViewModels
             _IsRefreshing = false;
         }
 
+=======
+        
+>>>>>>> af8f57e44de3c30e5840fd48cce35b673cab6b52
 
         void PageLoad()
         {
@@ -77,6 +81,14 @@ namespace XammySFCalendar.ViewModels
             }
 
         }
+<<<<<<< HEAD
+=======
+        void Refresh()
+        {
+            PageLoad();
+            _IsRefreshing = false;
+        }
+>>>>>>> af8f57e44de3c30e5840fd48cce35b673cab6b52
     }
     public class EventList
     {
