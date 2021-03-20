@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:local="clr-namespace:XammySFCalendar.ViewModels"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.PrefersStatusBarHidden="True"
+             ios:Page.PreferredStatusBarUpdateAnimation="Fade"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             x:Class="XammySFCalendar.Views.JCalendar">
+    <RefreshView Command="{Binding RefreshCommand}" IsRefreshing="{Binding IsRefreshing}">
+        <ScrollView>
+            <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="True" InlineViewMode="Inline" MaximumEventIndicatorCount="1" DataSource="{Binding CalendarInlineEvents}">
+            </syncfusion:SfCalendar>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>
